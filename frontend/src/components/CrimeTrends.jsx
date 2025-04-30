@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CrimeTrends.css';
 import { Bar } from 'react-chartjs-2';  // Importing Chart.js for bar chart
-// import { Chart as ChartJS } from 'chart.js/auto';  // Registering chart.js components
+import { Chart as ChartJS } from 'chart.js/auto';  // Registering chart.js components
 
 function CrimeTrends() {
   const [crimeTypes, setCrimeTypes] = useState([]); // Crime types from backend

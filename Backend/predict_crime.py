@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import os
 from statsmodels.tsa.arima.model import ARIMA
-import joblib
 
 def calculate_crime_rate(df, city_name, crime_type):
     df.columns = df.columns.str.lower()
