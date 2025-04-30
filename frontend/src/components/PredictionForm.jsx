@@ -52,7 +52,7 @@ export default function PredictionForm() {
       <h2>📊 Crime Analyzer</h2>
 
       <form onSubmit={handleSubmit} className="form-fields">
-        <input name="year" placeholder="Enter year before 2025" type="number" className="form-input" value={formData.year} onChange={handleChange} />
+        <input name="year" placeholder="Enter year between 2020 to 2024" type="number" className="form-input" value={formData.year} onChange={handleChange} />
         
         <select name="city" className="form-input" value={formData.city} onChange={handleChange} required>
           <option value="">Select City</option>
