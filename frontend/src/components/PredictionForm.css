@@ -1,0 +1,62 @@
+.prediction-form {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: #f8f8ff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ccc;
+  margin-top:2rem;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input, .form-button {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+}
+
+.form-button {
+  background-color: #0066cc;
+  color: white;
+  cursor: pointer;
+}
+
+.form-button:disabled {
+  background-color: #ccc;
+}
+
+.prediction-result, .historical-crime {
+  margin-top: 2rem;
+  background: #e9f5ff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.crime-history-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.crime-history-table th, .crime-history-table td {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  margin-top: 1rem;
+}

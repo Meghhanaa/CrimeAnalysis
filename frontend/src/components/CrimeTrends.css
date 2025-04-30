@@ -1,0 +1,149 @@
+/* General Layout */
+.crime-forecast-form {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f4f4f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.crime-forecast-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.crime-type-selector {
+  margin-bottom: 25px;
+}
+
+.crime-type-selector label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  margin-right: 15px;
+}
+
+.crime-type-selector select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin-top: 10px;
+  background-color: #ffffff;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.crime-type-selector select:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+.generate-chart-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+.generate-chart-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.generate-chart-btn:hover:enabled {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.generate-chart-btn:active:enabled {
+  background-color: #004085;
+  transform: scale(1);
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.chart-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.chart-container h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.crime-chart-img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.crime-chart-img:hover {
+  transform: scale(1.02);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 800px) {
+  .crime-forecast-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .crime-type-selector select {
+    width: 100%;
+  }
+
+  .generate-chart-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .crime-forecast-form {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .generate-chart-btn {
+    font-size: 14px;
+  }
+}
